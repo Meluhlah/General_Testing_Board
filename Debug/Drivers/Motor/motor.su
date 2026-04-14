@@ -1,0 +1,4 @@
+../Drivers/Motor/motor.c:10:6:motor_init	24	static
+../Drivers/Motor/motor.c:29:6:motor_en	16	static
+../Drivers/Motor/motor.c:46:6:motor_set_direction	16	static
+../Drivers/Motor/motor.c:53:6:motor_set_speed	16	static

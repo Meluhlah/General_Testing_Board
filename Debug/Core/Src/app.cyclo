@@ -1,0 +1,6 @@
+../Core/Src/app.c:12:6:HAL_TIM_PWM_CompleteCallback	3
+../Core/Src/app.c:20:6:HAL_TIM_PeriodElapsedCallback	1
+../Core/Src/app.c:27:6:ws2812b_set_single_color	1
+../Core/Src/app.c:34:6:USB_CDC_RxHandler	2
+../Core/Src/app.c:45:6:process_received_data	11
+../Core/Src/app.c:78:6:app	2
