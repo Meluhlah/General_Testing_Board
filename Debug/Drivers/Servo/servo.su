@@ -1,3 +1,4 @@
 ../Drivers/Servo/servo.c:11:6:servo_init	24	static
-../Drivers/Servo/servo.c:21:6:servo_drive	24	static
-../Drivers/Servo/servo.c:34:6:servo_sig_off	16	static
+../Drivers/Servo/servo.c:23:6:servo_set_params	32	static
+../Drivers/Servo/servo.c:32:6:servo_drive	32	static
+../Drivers/Servo/servo.c:50:6:servo_sig_off	16	static

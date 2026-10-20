@@ -59,10 +59,22 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define USER_LED_Pin GPIO_PIN_13
 #define USER_LED_GPIO_Port GPIOC
+#define RS485_DE_Pin GPIO_PIN_1
+#define RS485_DE_GPIO_Port GPIOA
+#define RS485_D_Pin GPIO_PIN_2
+#define RS485_D_GPIO_Port GPIOA
+#define RS485_R_Pin GPIO_PIN_3
+#define RS485_R_GPIO_Port GPIOA
 #define WS2812B_SIG_Pin GPIO_PIN_6
 #define WS2812B_SIG_GPIO_Port GPIOA
 #define SOLENOID_OUTPUT_Pin GPIO_PIN_7
 #define SOLENOID_OUTPUT_GPIO_Port GPIOA
+#define IO2_Pin GPIO_PIN_6
+#define IO2_GPIO_Port GPIOC
+#define RS232_RX_Pin GPIO_PIN_2
+#define RS232_RX_GPIO_Port GPIOD
+#define RS232_TX_Pin GPIO_PIN_3
+#define RS232_TX_GPIO_Port GPIOD
 #define MOT_PWM_Pin GPIO_PIN_8
 #define MOT_PWM_GPIO_Port GPIOB
 #define MOT_DIR_Pin GPIO_PIN_9

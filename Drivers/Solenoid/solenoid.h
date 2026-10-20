@@ -22,12 +22,8 @@
  *
  */
 
-#define SOLENOID_PWM_TIM				&htim14
-#define SOLENOID_PWM_TIM_CH				TIM_CHANNEL_1
 #define SOLENOID_PWM_PEAK_VALUE			100
 #define SOLENOID_PWM_HOLD_VALUE			50
-
-#define SOLENOID_PEAK_TIM				&htim17
 #define SOLENOID_PEAK_DURATION_MS		1000
 
 
@@ -41,16 +37,18 @@ typedef enum{
 typedef struct{
 
 	TIM_HandleTypeDef *pwm_tim;
+	uint32_t pwm_tim_channel;
 	TIM_HandleTypeDef *peak_tim;
-	uint8_t hold_duty;
+	uint16_t hold_duty;
 	Solenoid_state_e state;
 
 }Solenoid_t;
 
-void solenoid_init(Solenoid_t* solenoid);
+void solenoid_init(Solenoid_t* solenoid, TIM_HandleTypeDef* pwm_tim, uint32_t pwm_tim_channel, TIM_HandleTypeDef* peak_tim, uint16_t hold_duty);
 void solenoid_off(Solenoid_t* solenoid);
 void solenoid_on(Solenoid_t* solenoid);
 void solenoid_on_peak_hold(Solenoid_t* solenoid);
 void solenoid_check_peak_timeout(Solenoid_t* solenoid, TIM_HandleTypeDef *htim);
+void solenoid_set_hold_duty(Solenoid_t* solenoid, uint16_t hold_duty);
 
 #endif /* SOLENOID_SOLENOID_H_ */

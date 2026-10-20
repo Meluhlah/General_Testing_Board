@@ -1,6 +1,9 @@
-../Core/Src/app.c:12:6:HAL_TIM_PWM_CompleteCallback	3
-../Core/Src/app.c:20:6:HAL_TIM_PeriodElapsedCallback	1
-../Core/Src/app.c:27:6:ws2812b_set_single_color	1
-../Core/Src/app.c:34:6:USB_CDC_RxHandler	2
-../Core/Src/app.c:45:6:process_received_data	11
-../Core/Src/app.c:78:6:app	2
+../Core/Src/app.c:11:6:HAL_TIM_PWM_CompleteCallback	3
+../Core/Src/app.c:19:6:HAL_TIM_PeriodElapsedCallback	1
+../Core/Src/app.c:26:6:ws2812b_set_single_color	1
+../Core/Src/app.c:33:6:USB_CDC_RxHandler	2
+../Core/Src/app.c:44:6:canbus_send_msg	3
+../Core/Src/app.c:64:6:rs485_send_msg	4
+../Core/Src/app.c:88:6:rs232_send_msg	4
+../Core/Src/app.c:104:6:process_received_data	19
+../Core/Src/app.c:173:6:app	3

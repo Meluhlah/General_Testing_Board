@@ -1,3 +1,4 @@
 ../Drivers/Servo/servo.c:11:6:servo_init	1
-../Drivers/Servo/servo.c:21:6:servo_drive	8
-../Drivers/Servo/servo.c:34:6:servo_sig_off	1
+../Drivers/Servo/servo.c:23:6:servo_set_params	1
+../Drivers/Servo/servo.c:32:6:servo_drive	7
+../Drivers/Servo/servo.c:50:6:servo_sig_off	1

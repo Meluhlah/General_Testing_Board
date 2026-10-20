@@ -1,5 +1,6 @@
 ../Drivers/Solenoid/solenoid.c:11:6:solenoid_init	1
-../Drivers/Solenoid/solenoid.c:20:6:solenoid_check_peak_timeout	2
-../Drivers/Solenoid/solenoid.c:34:6:solenoid_on	1
-../Drivers/Solenoid/solenoid.c:40:6:solenoid_on_peak_hold	1
-../Drivers/Solenoid/solenoid.c:52:6:solenoid_off	1
+../Drivers/Solenoid/solenoid.c:22:6:solenoid_check_peak_timeout	7
+../Drivers/Solenoid/solenoid.c:34:6:solenoid_on	6
+../Drivers/Solenoid/solenoid.c:40:6:solenoid_on_peak_hold	6
+../Drivers/Solenoid/solenoid.c:55:6:solenoid_off	1
+../Drivers/Solenoid/solenoid.c:62:6:solenoid_set_hold_duty	1

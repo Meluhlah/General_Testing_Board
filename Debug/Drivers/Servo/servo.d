@@ -25,6 +25,9 @@ Drivers/Servo/servo.o: ../Drivers/Servo/servo.c ../Drivers/Servo/servo.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h \
+ ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h \
+ ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h \
+ ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c_ex.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pcd.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usb.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pcd_ex.h \
@@ -32,11 +35,14 @@ Drivers/Servo/servo.o: ../Drivers/Servo/servo.c ../Drivers/Servo/servo.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h \
+ ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h \
+ ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h \
  ../Core/Inc/app.h \
  C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Addressable_leds/Addressable_leds.h \
  C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Solenoid/solenoid.h \
  C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Servo/servo.h \
- C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Motor/motor.h
+ C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Motor/motor.h \
+ ../Core/Inc/fdcan.h ../Core/Inc/usart.h ../Core/Inc/i2c.h
 ../Drivers/Servo/servo.h:
 ../Core/Inc/tim.h:
 ../Core/Inc/main.h:
@@ -65,6 +71,9 @@ Drivers/Servo/servo.o: ../Drivers/Servo/servo.c ../Drivers/Servo/servo.h \
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c_ex.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pcd.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usb.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pcd_ex.h:
@@ -72,8 +81,13 @@ Drivers/Servo/servo.o: ../Drivers/Servo/servo.c ../Drivers/Servo/servo.h \
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:
 ../Core/Inc/app.h:
 C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Addressable_leds/Addressable_leds.h:
 C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Solenoid/solenoid.h:
 C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Servo/servo.h:
 C:/Users/Lidor/STM32CubeIDE/workspace_1.19.0/General_Board/Drivers/Motor/motor.h:
+../Core/Inc/fdcan.h:
+../Core/Inc/usart.h:
+../Core/Inc/i2c.h:

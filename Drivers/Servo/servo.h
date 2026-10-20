@@ -10,27 +10,23 @@
 
 #include "tim.h"
 
-
-#define SERVO_MIN_DEGREES	(int8_t)(-90)
-#define SERVO_MAX_DEGREES	(int8_t)(90)
-#define SERVO_MIN_TIM_TICKS	1000
-#define SERVO_MAX_TIM_TICKS	2000
-
-
 typedef struct{
 
 	TIM_HandleTypeDef* pwm_tim;
 	uint32_t pwm_tim_ch;
-	int8_t target_deg;
-	int8_t current_deg;
-
+	uint16_t target_angle;
+	uint16_t current_angle;	// if feedback is available
+	uint16_t max_angle;
+	uint16_t min_ticksUs;
+	uint16_t max_ticksUs;
 
 }Servo_t;
 
 
 
-void servo_init(Servo_t* servo, TIM_HandleTypeDef* pwm_tim, uint32_t pwm_tim_ch);
-void servo_drive(Servo_t* servo, int8_t degrees);
+void servo_init(Servo_t* servo, TIM_HandleTypeDef* pwm_tim, uint32_t pwm_tim_ch, uint16_t max_angle, uint16_t min_ticksUs, uint16_t max_ticksUs);
+void servo_set_params(Servo_t* servo, uint16_t minTicksUs, uint16_t maxTicksUs, uint16_t maxAngle);
+void servo_drive(Servo_t* servo, uint16_t targetAngle);
 void servo_sig_off(Servo_t* servo);
 
 
