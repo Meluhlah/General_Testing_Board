@@ -1,9 +1,10 @@
 ../Core/Src/app.c:11:6:HAL_TIM_PWM_CompleteCallback	16	static
 ../Core/Src/app.c:19:6:HAL_TIM_PeriodElapsedCallback	16	static
-../Core/Src/app.c:26:6:ws2812b_set_single_color	32	static
-../Core/Src/app.c:33:6:USB_CDC_RxHandler	16	static
-../Core/Src/app.c:44:6:canbus_send_msg	8	static
-../Core/Src/app.c:64:6:rs485_send_msg	64	static
-../Core/Src/app.c:88:6:rs232_send_msg	48	static
-../Core/Src/app.c:104:6:process_received_data	24	static
-../Core/Src/app.c:173:6:app	16	static
+../Core/Src/app.c:35:6:ws2812b_set_single_color	32	static
+../Core/Src/app.c:42:6:USB_CDC_RxHandler	16	static
+../Core/Src/app.c:53:6:canbus_send_msg	8	static
+../Core/Src/app.c:73:6:rs485_send_msg	64	static
+../Core/Src/app.c:97:6:rs232_send_msg	48	static
+../Core/Src/app.c:113:6:io2_pulse_ms	8	static
+../Core/Src/app.c:122:6:process_received_data	24	static
+../Core/Src/app.c:195:6:app	16	static

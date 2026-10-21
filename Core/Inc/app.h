@@ -11,6 +11,8 @@
 #include "usart.h"
 #include "i2c.h"
 
+#define IO2_TIMER	htim7
+
 
 void app();
 void ws2812b_set_single_color(uint8_t index, uint8_t red, uint8_t green, uint8_t blue);
@@ -19,6 +21,7 @@ void process_received_data();
 void canbus_send_msg();
 void rs485_send_msg();
 void rs232_send_msg();
+void io2_pulse_ms();
 
 
 typedef enum{
@@ -38,7 +41,8 @@ typedef enum{
     CMD_SOLENOID_SET_HOLD_DUTY,
     CMD_CANBUS_SEND_MSG,
     CMD_RS485_SEND_MSG,
-    CMD_RS232_SEND_MSG
+    CMD_RS232_SEND_MSG,
+	CMD_IO2_PULSE_MS
 
 
 } UartCommands_e;

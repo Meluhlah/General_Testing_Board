@@ -18,7 +18,16 @@ void HAL_TIM_PWM_CompleteCallback(TIM_HandleTypeDef *htim){
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
-	solenoid_check_peak_timeout(&solenoid, htim);
+	if(htim->Instance == TIM14)
+		solenoid_check_peak_timeout(&solenoid, htim);
+
+	if(htim->Instance == TIM7){	//TODO: Change to IO2_TIMER define
+
+		HAL_TIM_Base_Stop_IT(htim);
+		HAL_GPIO_WritePin(IO2_GPIO_Port, IO2_Pin, GPIO_PIN_RESET);
+
+	}
+
 
 }
 
@@ -101,6 +110,15 @@ void rs232_send_msg(){
 
 }
 
+void io2_pulse_ms(){
+
+	__HAL_TIM_SET_AUTORELOAD(&IO2_TIMER, uartRxBuffer.data[0] -1);
+	__HAL_TIM_SET_COUNTER(&IO2_TIMER,0);
+	HAL_TIM_Base_Start_IT(&IO2_TIMER);
+	HAL_GPIO_WritePin(IO2_GPIO_Port, IO2_Pin, GPIO_PIN_SET);
+
+}
+
 void process_received_data(){
 
 	switch(uartRxBuffer.command){
@@ -161,6 +179,10 @@ void process_received_data(){
 
 	case CMD_RS232_SEND_MSG:
 		rs232_send_msg();
+		break;
+
+	case CMD_IO2_PULSE_MS:
+		io2_pulse_ms();
 		break;
 
 	default:
